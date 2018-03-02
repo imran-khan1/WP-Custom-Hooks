@@ -1,0 +1,11 @@
+Place in file where the action will be fired
+
+do_action( 'my_custom_action' );
+
+
+Pleace the code for the action when fired
+
+function my_action_something_cool() {
+     echo '<p>This text will be displayed</p>';
+}
+add_action('my_custom_action', 'my_action_something_cool');

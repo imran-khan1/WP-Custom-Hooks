@@ -1,0 +1,18 @@
+Place in file e.h header, footer or template or else
+
+function themeblvd_get_something_cool() {
+ 
+    $output = 'Hello World';
+ 
+    return apply_filters('my_custom_filter', $output);
+}
+
+echo themeblvd_get_something_cool();
+
+
+Place e.g functions.php or else
+
+function my_something_cool( $text ) {
+    return 'This text will appear';
+}
+add_filter('my_custom_filter', 'my_something_cool');
